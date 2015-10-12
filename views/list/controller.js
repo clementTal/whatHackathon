@@ -1,0 +1,3 @@
+function ListCtrl($scope, $location) {
+
+}

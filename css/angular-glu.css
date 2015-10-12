@@ -1,0 +1,244 @@
+/***********************/
+/********* LINK ********/
+/***********************/
+/***********************/
+/********* MENU ********/
+/***********************/
+/***********************/
+/******* DIVIDER *******/
+/***********************/
+/***********************/
+/********* CARD ********/
+/***********************/
+/***********************/
+/******* SHADOWS *******/
+/***********************/
+/***********************/
+/****** ANIMATIONS *****/
+/***********************/
+/***********************/
+/******** BUTTON *******/
+/***********************/
+/***********************/
+/********* FORM ********/
+/***********************/
+/* line 1, ../sass/misc/_actions.scss */
+.grow { -webkit-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
+/* line 3, ../sass/misc/_actions.scss */
+.grow:hover { -webkit-animation: scale 1.2; -moz-animation: scale 1.2; animation: scale 1.2; }
+/* line 6, ../sass/misc/_actions.scss */
+.grow.blue { background-color: #738ffe; }
+
+/* line 11, ../sass/misc/_actions.scss */
+.raised { -webkit-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4); cursor: pointer; }
+/* line 15, ../sass/misc/_actions.scss */
+.raised:hover { box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.4); }
+/* line 18, ../sass/misc/_actions.scss */
+.raised:active { box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4); }
+
+/**************************************/
+/**************** MISC ****************/
+/**************************************/
+/* line 1, ../sass/misc/_button.scss */
+.button { width: 120px; height: 30px; line-height: 30px; border-radius: 2px; font-size: 0.9em; background-color: #fff; color: #646464; cursor: pointer; display: inline-block; overflow: hidden; }
+/* line 12, ../sass/misc/_button.scss */
+.button.blue { background-color: #738ffe; color: #fff; }
+/* line 16, ../sass/misc/_button.scss */
+.button.red { background-color: #e51c23; color: #fff; }
+/* line 20, ../sass/misc/_button.scss */
+.button.green { background-color: #9ccc65; color: #fff; }
+/* line 24, ../sass/misc/_button.scss */
+.button.black { background-color: black; color: #fff; }
+/* line 30, ../sass/misc/_button.scss */
+.button.clicked .clic-action { -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; height: 240px; width: 240px; border-radius: 240px; top: -135px; background-color: transparent; }
+/* line 40, ../sass/misc/_button.scss */
+.button .clic-action { margin: auto; background-color: rgba(0, 0, 0, 0.3); height: 0px; width: 0px; position: relative; top: -15px; }
+
+/* line 51, ../sass/misc/_button.scss */
+.round { position: relative; display: inline-block; width: 50px; height: 50px; line-height: 50px; text-align: center; border-radius: 50%; color: #fff; overflow: hidden; }
+/* line 61, ../sass/misc/_button.scss */
+.round.red { background-color: #e51c23; }
+/* line 64, ../sass/misc/_button.scss */
+.round.blue { background-color: #738ffe; }
+/* line 67, ../sass/misc/_button.scss */
+.round.green { background-color: #9ccc65; }
+/* line 70, ../sass/misc/_button.scss */
+.round.black { background-color: black; }
+/* line 73, ../sass/misc/_button.scss */
+.round.inv { color: black; }
+/* line 78, ../sass/misc/_button.scss */
+.round.clicked .clic-action { -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; height: 100px; width: 100px; border-radius: 100px; top: -75px; background-color: transparent; }
+/* line 88, ../sass/misc/_button.scss */
+.round .clic-action { margin: auto; background-color: rgba(0, 0, 0, 0.3); height: 0px; width: 0px; position: relative; top: -25px; }
+
+/* line 1, ../sass/misc/_cards.scss */
+.card { display: inline-block; position: relative; font-size: 15px; background-color: #fff; color: #646464; border: 1px solid #e2e2e2; margin-bottom: 30px; padding: 5px 15px; }
+/* line 10, ../sass/misc/_cards.scss */
+.card.card-rounded { border-radius: 5px; }
+/* line 14, ../sass/misc/_cards.scss */
+.card .card-header { padding-bottom: 20px; font-size: 20px; text-transform: capitalize; color: #607d8b; width: 100%; display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* line 23, ../sass/misc/_cards.scss */
+.card .card-content { font-size: 15px; }
+/* line 27, ../sass/misc/_cards.scss */
+.card .card-footer { padding-top: 20px; text-align: right; color: #757575; }
+
+/* line 35, ../sass/misc/_cards.scss */
+.card-z-1 { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+/* line 39, ../sass/misc/_cards.scss */
+.card-z-2 { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+/* line 43, ../sass/misc/_cards.scss */
+.card-z-3 { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+/* line 4, ../sass/misc/_dialog.scss */
+.dialog:before { content: ""; display: none; background: rgba(0, 0, 0, 0.6); position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 10; }
+/* line 14, ../sass/misc/_dialog.scss */
+.dialog:target:before { display: block; }
+/* line 17, ../sass/misc/_dialog.scss */
+.dialog:target .dialog-content { -ms-transform: 0, 0; -webkit-transform: 0, 0; transform: 0, 0; top: 20%; }
+
+/* line 26, ../sass/misc/_dialog.scss */
+.dialog-content { margin-left: -200px; position: fixed; left: 50%; top: -100%; z-index: 11; width: 360px; -ms-transform: 0, -500%; -webkit-transform: 0, -500%; transform: 0, -500%; -webkit-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; }
+
+/* line 1, ../sass/misc/_divider.scss */
+.divider { width: 100%; border-bottom: 1px solid #e2e2e2; margin-top: 30px; margin-bottom: 10px; }
+
+/* line 1, ../sass/misc/_forms.scss */
+.form { width: 300px; }
+
+/* line 5, ../sass/misc/_forms.scss */
+.group { position: relative; margin-bottom: 45px; }
+/* line 8, ../sass/misc/_forms.scss */
+.group:last-child { margin-bottom: 15px; }
+
+/* line 14, ../sass/misc/_forms.scss */
+input { font-size: 18px; padding: 10px 0px 10px 0px; display: block; width: 100%; border: none; border-bottom: 1px solid #757575; }
+/* line 21, ../sass/misc/_forms.scss */
+input:focus { outline: none; }
+
+/* line 26, ../sass/misc/_forms.scss */
+label { color: #999; font-size: 18px; font-weight: normal; position: absolute; pointer-events: none; left: 5px; top: 10px; -webkit-transition: 0.2s ease all; transition: 0.2s ease all; }
+
+/* active state */
+/* line 40, ../sass/misc/_forms.scss */
+input:focus ~ label, input:valid ~ label { top: -20px; font-size: 14px; color: #738ffe; display: block; }
+
+/* line 48, ../sass/misc/_forms.scss */
+.bar { position: relative; display: block; width: 100%; }
+/* line 52, ../sass/misc/_forms.scss */
+.bar:before, .bar:after { content: ''; height: 2px; width: 0; bottom: 1px; position: absolute; background: #738ffe; -webkit-transition: 0.2s ease all; transition: 0.2s ease all; }
+/* line 61, ../sass/misc/_forms.scss */
+.bar:before { left: 50%; }
+/* line 64, ../sass/misc/_forms.scss */
+.bar:after { right: 50%; }
+
+/* active state */
+/* line 72, ../sass/misc/_forms.scss */
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
+/* line 77, ../sass/misc/_forms.scss */
+.highlight { position: absolute; height: 60%; width: 100px; top: 25%; left: 0; pointer-events: none; opacity: 0.5; }
+
+/* active state */
+/* line 89, ../sass/misc/_forms.scss */
+input:focus ~ .highlight { -webkit-transition: inputHighlighter 0.3s ease; transition: inputHighlighter 0.3s ease; }
+
+@-webkit-keyframes inputHighlighter { /* line 96, ../sass/misc/_forms.scss */
+  from { background: #738ffe; }
+  /* line 99, ../sass/misc/_forms.scss */
+  to { width: 0; background: transparent; } }
+@-moz-keyframes inputHighlighter { /* line 96, ../sass/misc/_forms.scss */
+  from { background: #738ffe; }
+  /* line 99, ../sass/misc/_forms.scss */
+  to { width: 0; background: transparent; } }
+@-ms-keyframes inputHighlighter { /* line 96, ../sass/misc/_forms.scss */
+  from { background: #738ffe; }
+  /* line 99, ../sass/misc/_forms.scss */
+  to { width: 0; background: transparent; } }
+@keyframes inputHighlighter { /* line 96, ../sass/misc/_forms.scss */
+  from { background: #738ffe; }
+  /* line 99, ../sass/misc/_forms.scss */
+  to { width: 0; background: transparent; } }
+/* line 1, ../sass/misc/_icons.scss */
+.symbs { display: inline-block; position: relative; width: 32px; height: 32px; line-height: 32px; overflow: hidden; border-radius: 2px; font-size: 0.9em; background-color: #000; color: white; border-radius: 10px; }
+/* line 13, ../sass/misc/_icons.scss */
+.symbs.red { background-color: #e51c23; border: 1px solid #e51c23; }
+/* line 17, ../sass/misc/_icons.scss */
+.symbs.blue { background-color: #738ffe; border: 1px solid #738ffe; }
+/* line 21, ../sass/misc/_icons.scss */
+.symbs.green { background-color: #9ccc65; border: 1px solid #9ccc65; }
+/* line 25, ../sass/misc/_icons.scss */
+.symbs.inv { color: black; }
+/* line 30, ../sass/misc/_icons.scss */
+.symbs.clicked .clic-action { -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; height: 64px; width: 64px; border-radius: 64px; top: -48px; background-color: transparent; }
+/* line 40, ../sass/misc/_icons.scss */
+.symbs .clic-action { margin: auto; background-color: rgba(0, 0, 0, 0.3); height: 0px; width: 0px; position: relative; top: -16px; }
+
+/* line 1, ../sass/misc/_links.scss */
+a.link { text-decoration: none; text-transform: uppercase; font-size: 16px; padding: 0 5px; }
+/* line 7, ../sass/misc/_links.scss */
+a.link.primary { color: #00b0ff; }
+/* line 11, ../sass/misc/_links.scss */
+a.link.secondary { color: #fb8c00; }
+/* line 15, ../sass/misc/_links.scss */
+a.link.default { color: #757575; }
+
+/* line 1, ../sass/misc/_menu.scss */
+.menu { width: 100%; height: 50px; line-height: 50px; background-color: black; display: inline-block; overflow: hidden; z-index: 1000; }
+/* line 10, ../sass/misc/_menu.scss */
+.menu .menu-title { padding: 0 10px; display: inline-block; font-size: 20px; color: white; line-height: 50px; }
+/* line 18, ../sass/misc/_menu.scss */
+.menu .menu-items { margin-left: 50px; padding: 0; display: inline-block; float: right; }
+/* line 24, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry { width: 50px; height: 50px; text-align: center; display: inline-block; cursor: pointer; color: white; }
+/* line 32, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry i { -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
+/* line 36, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry .helper { visibility: hidden; display: inline-block; font-size: 10px; font-weight: bold; text-transform: uppercase; }
+/* line 44, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry.selected, .menu .menu-items .menu-entry.selected:hover { background-color: #FFFFFF; color: #424242; }
+/* line 48, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry.selected.blue, .menu .menu-items .menu-entry.selected:hover.blue { background-color: #738ffe; }
+/* line 49, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry.selected.pink, .menu .menu-items .menu-entry.selected:hover.pink { background-color: #e91e63; }
+/* line 50, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry.selected.green, .menu .menu-items .menu-entry.selected:hover.green { background-color: #9ccc65; }
+/* line 51, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry.selected.cyan, .menu .menu-items .menu-entry.selected:hover.cyan { background-color: #00bcd4; }
+/* line 52, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry.selected.purple, .menu .menu-items .menu-entry.selected:hover.purple { background-color: #7e57c2; }
+/* line 53, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry.selected i, .menu .menu-items .menu-entry.selected:hover i { color: #424242; }
+/* line 58, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry:hover { background-color: #777777; color: #424242; }
+/* line 62, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry:hover.blue { background-color: #738ffe; }
+/* line 63, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry:hover.pink { background-color: #e91e63; }
+/* line 64, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry:hover.green { background-color: #9ccc65; }
+/* line 65, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry:hover.cyan { background-color: #00bcd4; }
+/* line 66, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry:hover.purple { background-color: #7e57c2; }
+/* line 67, ../sass/misc/_menu.scss */
+.menu .menu-items .menu-entry:hover i { visibility: visible; -webkit-transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); transform: translateY(-50px); color: white; }
+/* line 76, ../sass/misc/_menu.scss */
+.menu .menu-right { float: right; margin: 10px; }
+/* line 81, ../sass/misc/_menu.scss */
+.menu.fixed { position: fixed; top: 0px; }
+
+/* line 14, ../sass/_material.scss */
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+/* line 18, ../sass/_material.scss */
+.container { font-family: 'Roboto', sans-serif; margin: 70px 100px 50px 100px; }
+
+/* line 24, ../sass/_material.scss */
+.center { text-align: center; }
+
+/* line 28, ../sass/_material.scss */
+.fa { line-height: inherit; font-size: 16px; }
+
+/*# sourceMappingURL=angular-glu.css.map */
