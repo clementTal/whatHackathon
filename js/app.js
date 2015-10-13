@@ -10,7 +10,7 @@ app.config(['$routeProvider', function ($routeProvider)
         .otherwise({redirectTo: '/'});
 }]);
 
-app.config(['$locationProvider', function($locationProvider)
+/*app.config(['$locationProvider', function($locationProvider)
 {
     $locationProvider.html5Mode(true);
-}]);
+}]);*/
