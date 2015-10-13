@@ -1,8 +1,14 @@
 body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
-
+    background-color: #000
 }
+
+.offre {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
 
 .background {
     background-image: url("/img/background-picture.png");
@@ -27,7 +33,7 @@ body {
     left: 40%;
     text-align: center;
 }
-.title {
+.main-title {
     background-image: url("/img/logo2.png");
     background-position: top;
     background-size: 100% auto;
@@ -48,7 +54,7 @@ body {
 
 .menu {
     height: 40px;
-    background: rgba(214,70,52, 1);
+    background: rgba(251,172,54, 1);
 }
 .menu .title{
     margin-left: 10px;
@@ -63,29 +69,108 @@ body {
     float: right;
 }
 
+.menu .logo {
+    height: 50px;
+}
+
 .list {
-    margin: 30px;
 }
 .last-offers {
     width: 100%;
     text-align: center;
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    color: #FFF;
+    margin-left: -20px;
 }
 .header-offer {
     width: 100%;
     text-align: center;
     font-size: 20px;
     margin-bottom: 30px;
+    margin-top: 10px;
+    color: rgba(251,172,54, 1);
 }
 
 
 .card {
-    width: 40%;
+    width: 60%;
+    padding: 0;
 }
+
+.card-content img {
+    width: 100%;
+    height: auto;
+}
+
+.card .card-footer {
+    padding: 7px;
+    background-color: white;
+}
+
+.card .title {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    bottom: 35;
+    right: 10;
+}
+
+a.link.primary {
+    color: rgba(251,172,54, 1);
+}
+
 
 .half {
     width: 48%;
     float: left;
     text-align: center;
+
+}
+
+.half.border{
+    border-right: 3px solid rgba(251,172,54, 1);
+}
+
+.content {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+.offre img {
+    width: 30%;
+}
+
+.cherche {
+    float: right;
+    font-size: 40px;
+    width: 65%;
+}
+
+.offer-content {
+    margin-top: 40px;
+}
+
+.line {
+    width: 100%;
+    color: black;
+}
+
+.col_g {
+    width: 30%;
+    text-align: right;
+    display: inline-table;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.col_d{
+    width: 69%;
+    text-align: left;
+    display: inline-table;
+    padding-left: 20px;
+    border-left: 3px solid rgba(251,172,54, 1);
+    padding-bottom: 10px;
 }

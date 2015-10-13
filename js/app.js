@@ -7,6 +7,8 @@ app.config(['$routeProvider', function ($routeProvider)
             controller: HomeCtrl})
         .when('/list', {templateUrl: '/views/list/list.html',
             controller: ListCtrl})
+        .when('/offer', {templateUrl: '/views/offer/offer.html',
+            controller: OfferCtrl})
         .otherwise({redirectTo: '/'});
 }]);
 
