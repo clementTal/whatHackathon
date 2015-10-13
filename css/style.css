@@ -1,31 +1,54 @@
 body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
+
 }
+
+.background {
+    background-image: url("/img/background-picture.png");
+    background-position: top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%
+}
+
+.login {
+    float: right;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+}
+
 .home {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 40%;
     text-align: center;
 }
 .title {
-    font-size: 40px;
+    background-image: url("/img/logo2.png");
+    background-position: top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 180px;
+    margin-left: -80px;
 }
-.title .sub-title {
-    font-size: 20px;
-    color: grey;
-}
+
 .search {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .button.big {
     width: 190px;
+    margin-left: -70px;
 }
 
 .menu {
     height: 40px;
-    background: rgba(90, 90, 90, 0.79);
+    background: rgba(214,70,52, 1);
 }
 .menu .title{
     margin-left: 10px;
